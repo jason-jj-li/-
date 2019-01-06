@@ -171,7 +171,8 @@ summ.factor(mets$income)
 # 最终使用变量 ------------------------------------------------------------------
 
 varwant<-c("id","waist","gluind","sbp","dbp","bp","tgind","hdlcind","index5","ms", 
-           "marriage","nationality","sex","smoke","acohol","exercise")
+           "marriage","nationality","sex","smoke","acohol","exercise","occupation",
+           "education","urban","reside","income")
 metswant14<-mets[,varwant]
 metswant14$year<-2014
 write.csv(metswant14, file="D:/master/clhls/biom/MetS/MetS/mets14only.csv")
